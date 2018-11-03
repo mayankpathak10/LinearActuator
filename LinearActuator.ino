@@ -108,6 +108,13 @@ void setup() {
   myStepper.setSpeed(motorSpeed);
   Serial.println("Starting Program");
   Serial.println("Power OFF");
+  Serial.print("Number of Cycles Programmed for: ");
+  Serial.println(numCycles);
+  Serial.print("Inside Furnace Time(s): ");
+  Serial.println(downStopTime/1000);
+  Serial.print("Time Gap Between two cycles(s): ");
+  Serial.println(upStopTime/1000);
+  Serial.println("Push Button to Start");
 //  unsigned long current_millis = millis();
 }
 
